@@ -1,0 +1,4 @@
+SUMMARIZE(FILTER('Meteorite Landings','Meteorite Landings'[country] = "United States"),
+            'Meteorite Landings'[admin1],
+            'Meteorite Landings'[admin2],
+            "meteorite_count", COUNT('Meteorite Landings'[id]))
