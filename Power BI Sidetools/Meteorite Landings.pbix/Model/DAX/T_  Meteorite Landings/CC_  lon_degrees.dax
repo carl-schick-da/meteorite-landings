@@ -1,0 +1,7 @@
+
+    VAR lon_degrees = ABS(TRUNC('Meteorite Landings'[longitude]))
+    VAR lon_decimal = MOD('Meteorite Landings'[longitude],1)
+    VAR lon_minutes = round(lon_decimal * 60, 2)
+    VAR lon_direction = IF('Meteorite Landings'[longitude] >= 0, "E", "W")
+RETURN
+    lon_degrees & UNICHAR(0176) & lon_minutes & "' " & lon_direction

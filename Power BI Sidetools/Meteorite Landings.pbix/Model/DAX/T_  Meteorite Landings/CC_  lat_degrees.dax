@@ -1,0 +1,7 @@
+
+    VAR lat_degrees = ABS(TRUNC('Meteorite Landings'[latitude]))
+    VAR lat_decimal = MOD('Meteorite Landings'[latitude],1)
+    VAR lat_minutes = round(lat_decimal * 60, 2)
+    VAR lat_direction = IF('Meteorite Landings'[latitude] >= 0, "N", "S")
+RETURN
+    lat_degrees & UNICHAR(0176) & lat_minutes & "' " & lat_direction

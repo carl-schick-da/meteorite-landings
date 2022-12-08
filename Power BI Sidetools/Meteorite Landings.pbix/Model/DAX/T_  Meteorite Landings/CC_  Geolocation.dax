@@ -1,0 +1,1 @@
+'Meteorite Landings'[lat_degrees] & ", " & 'Meteorite Landings'[lon_degrees]
