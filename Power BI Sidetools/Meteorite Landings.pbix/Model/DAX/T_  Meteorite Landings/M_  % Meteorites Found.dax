@@ -1,0 +1,5 @@
+
+DIVIDE (
+    'Meteorite Landings'[Meteorites Found],
+    CALCULATE ( COUNT ( 'Meteorite Landings'[id] ), ALL ( 'Meteorite Landings' ) )
+)

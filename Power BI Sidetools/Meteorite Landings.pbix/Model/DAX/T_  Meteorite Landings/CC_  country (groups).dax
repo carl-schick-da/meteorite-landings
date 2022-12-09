@@ -1,0 +1,20 @@
+SWITCH(
+  TRUE,
+  ISBLANK('Meteorite Landings'[country]),
+  "(Blank)",
+  'Meteorite Landings'[country] IN {"Algeria"},
+  "Algeria",
+  'Meteorite Landings'[country] IN {"Antarctica"},
+  "Antarctica",
+  'Meteorite Landings'[country] IN {"Australia"},
+  "Australia",
+  'Meteorite Landings'[country] IN {"Chile"},
+  "Chile",
+  'Meteorite Landings'[country] IN {"Libya"},
+  "Libya",
+  'Meteorite Landings'[country] IN {"Oman"},
+  "Oman",
+  'Meteorite Landings'[country] IN {"United States"},
+  "United States",
+  "Other"
+)
